@@ -8,6 +8,12 @@
     <title>Gaming Campus</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+
+    <!--Font Awesome Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Icone de l'onglet-->
     <link rel="tab icon" href="./assets/img/logo-gg-home.png" />
   </head>
@@ -26,11 +32,13 @@
       </ul>
     </nav>
     <header>
-      <div class="header-main-image">
-        <img src="./assets/img/logo-gc-hero.png" alt="Logo GC" id="logo-gc-hero">
+      <div class="main-header">
+        <div id="header-main-image">
+          <img src="./assets/img/logo-gc-hero.png" alt="Logo GC" id="logo-gc-hero">
+        </div>
+        <h1>Passion. Professionalisme. Performance.</h1>
+        <button class="gc-video">Gaming Campus en Video <i class="fa-solid fa-angle-right"></i></button>
       </div>
-      <h1>Passion. Professionalisme. Performance.</h1>
-      <button class="gc-video">Gaming Campus en Video</button>
     </header>
     <main>
       <section class="description1">
@@ -42,25 +50,31 @@
       </section>
       <section class="filieres">
         <div class="filiere-container">
-          <div class="filiere1">
-            <img src="./assets/img/logo-gbs-home.png" alt="Gaming Business School" id="logo-gbs-home">
-            <h2>Gaming Business School</h2>
+          <div class="filiere">
+            <div class="filiere-logo">
+              <img src="./assets/img/logo-gbs-home.png" alt="Gaming Business School" id="logo-gbs-home">
+            </div>
+            <h3>Gaming Business School</h2>
             <p>formez-vous dans la première ecole de management 
               dédiée aux enjeux et métiers du jeu vidéo
             </p>
             <button class="savoir-plus">En savoir plus</button>
           </div>
-          <div class="filiere2">
-            <img src="./assets/img/logo-ga-home.png" alt="Gaming Academy" id="logo-ga-home">
-            <h2>Gaming Academy</h2>
+          <div class="filiere">
+            <div class="filiere-logo">
+              <img src="./assets/img/logo-ga-home.png" alt="Gaming Academy" id="logo-ga-home">
+            </div>
+            <h3>Gaming Academy</h2>
             <p>Entrainez-vous dans des conditions optimales pour devenir 
               esportif professionel.
             </p>
             <button class="savoir-plus">En savoir plus</button>
           </div>
-          <div class="filiere3">
-            <img src="./assets/img/logo-gg-home.png" alt="Gaming Guru" id="logo-gg-home">
-            <h2>Gaming Guru</h2>
+          <div class="filiere">
+            <div class="filiere-logo">
+              <img src="./assets/img/logo-gg-home.png" alt="Gaming Guru" id="logo-gg-home">
+            </div>
+            <h3>Gaming Guru</h2>
             <p>Jouez avec les meilleurs gamers pour vous améliorer dans vos jeux vidéo préférés.
             </p>
             <button class="savoir-plus">En savoir plus</button>
@@ -69,65 +83,82 @@
       </section>
       <section class ="news">
         <div class="news-title">
-          <h3>Les news du campus</h3>
-          <p> Suivez l'actualité du Gaming Campus, de G. Guru, G.B.S et G.Academy</p>
-          <button class="la newsroom">La Newsroom</button>
+          <div class="news-title-left">
+            <h2>Les news du campus</h3>
+            <p> Suivez l'actualité du Gaming Campus, de G. Guru, G.B.S et G.Academy</p>
+          </div>
+          <div class="news-title-right">
+            <button class="la newsroom">La Newsroom <i class="fa-solid fa-angle-right"></i></button>
+          </div>
         </div>
-        <div class="news-container">
-          <div class="news1">
-            <img src="assets/img/ri8decembre.jpg" alt="Reunion 19 Décembre" id="ri8decembre">
-            <h4>Réunion d'information 19 décembre</h4>
-            <p>Venez à notre rencontre lors de cette réunion d'information. Témoignages des étudiants / Ateliers sur le pédagogie par projet "Active Learning by Gaming Campus" / Découverte des locaux / Rencontre avec l'équipe pédagogique / Questions réponses.</p>
-            <button class="more-news">Sur Inscription</button>
-          </div>
-          <div class="news2">
-            <img src="assets/img/pgw18home.jpg" alt="PGW 2018" id="pgw18home">
-            <h4>Paris Games Week 2018 et réunions d'information</h4>
-            <p>Pendant tout le mois d'octobre venez rencontrer l'équipe pédagogique du Gaming Campus : Campus Lyon et stand Gaming Campus à la PGW18.</p>
-            <button class="more-news">Lire la suite</button>
-          </div>
-          <div class="news3">
-            <img src="./assets/img/inauguration_gaming_campus_photo.jpg" alt="Inauguration Gaming Campus Lyon" id="inauguration_gaming_campus_photo">
-            <h4>Inauguration Gaming Campus Lyon</h4>
-            <p>Revivez l'inauguration du Gaming Campus Lyon avec 180 invités, les grandes annonces de la rentrée, les photos de la soirée et les premières dates de réunions d'information.</p>
-            <button class="more-news">Lire la suite</button>
+        <div class="news-main">
+          <div class="news-main-container">
+            <div class="news">
+              <div class="news-logo">
+                <img src="assets/img/ri8decembre.jpg" alt="Reunion 19 Décembre" id="ri8decembre">
+              </div>
+              <h4>Réunion d'information 19 décembre</h4>
+              <p>Venez à notre rencontre lors de cette réunion d'information. Témoignages des étudiants / Ateliers sur le pédagogie par projet "Active Learning by Gaming Campus" / Découverte des locaux / Rencontre avec l'équipe pédagogique / Questions réponses.</p>
+              <div class="news-link">
+                <a href="weilps.github.io">Sur Inscription <i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="news">
+              <div class="news-logo">
+                <img src="assets/img/pgw18home.jpg" alt="PGW 2018" id="pgw18home">
+              </div>
+              <h4>Paris Games Week 2018 et réunions d'information</h4>
+              <p>Pendant tout le mois d'octobre venez rencontrer l'équipe pédagogique du Gaming Campus : Campus Lyon et stand Gaming Campus à la PGW18.</p>
+              <div class="news-link">
+                <a href="weilps.github.io">Lire la suite <i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="news">
+              <div class="news-logo">
+                <img src="./assets/img/inauguration_gaming_campus_photo.jpg" alt="Inauguration Gaming Campus Lyon" id="inauguration_gaming_campus_photo">
+              </div>
+              <h4>Inauguration Gaming Campus Lyon</h4>
+              <p>Revivez l'inauguration du Gaming Campus Lyon avec 180 invités, les grandes annonces de la rentrée, les photos de la soirée et les premières dates de réunions d'information.</p>
+              <div class="news-link">
+                <a href="weilps.github.io">Lire la suite <i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
       <div class="bottom-links-container">
-        <div class="logo-gc-footer">
+        <div class="list">
           <img src="./assets/img/logo-gc-footer.jpg" alt="Logo GC Footer" id="logo-gc-footer">
         </div>
-        <div class="infos-pratiques">
+        <div class=list">
           <h5>Infos Pratiques</h5>
           <ul class="infos-pratiques-list">
-            <li>Gaming Business School</li>
-            <li>Gaming Academy</li>
-            <li>Gaming Guru</li>
-            <li>Recrutement</li>
-            <li>Investisseurs</li>
-            <li>Mentions légales</li>
-            <li>C.G.U</li>
+            <li><a href="#">Gaming Business School</a></li>
+            <li><a href="#"></a>Gaming Academy</a></li>
+            <li><a href="#"></a>Gaming Guru</a></li>
+            <li><a href="#"></a>Recrutement</a></li>
+            <li><a href="#"></a>Investisseurs</a></li>
+            <li><a href="#"></a>Mentions légales</a></li>
+            <li><a href="#"></a>C.G.U</li>
           </ul>
         </div>
-        <div class="parents">
+        <div class="list">
           <h5>Parents</h5>
           <p>Questions / réponses pour vous accompagner dans votre réflexion sur l'orientation de votre enfant et le choix de Gaming Campus.</p>
           <a href="" class =link-1>En savoir plus</a>
         </div>
-        <div class="nous-contacter">
+        <div class="list">
           <h5>Nous Contacter</h5>
           <p>Tél. 04 28 29 81 03<br /><a href="mailto:contact@gamingcampus.fr" class="link-2">contact@gamingcampus.fr</a></p>
-        </div>
-        <div class="nous-suivre">
-          <h5>Nous Suivre</h5>
+        
+          <h5 class="network">Nous Suivre</h5>
           <ul class="nous-suivre-list">
-            <li><a href="https://twitter.com/weilps"><img src="assets/img/icon-twitter.png" alt="icone-twitter" id="icon-twitter"></a></li>
-            <li><a href="https://www.facebook.com/will.gaudin"><img src="assets/img/icon-facebook.png" alt="icone-facebook" id="icon-facebook"></a></li>
-            <li><a href="https://www.instagram.com/guillaumewillmiles/"><img src="assets/img/icon-linkedin.png" alt="icone-linkedin" id="icon-linkedin"></a></li>
-            <li><a href="https://www.linkedin.com/in/guillaume-gaudin/"><img src="assets/img/icon-instagram.png" alt="icone-instagram" id="icon-instagram"></a></li>
+            <li><a href="https://twitter.com/weilps"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/will.gaudin"><i class="fa-brands fa-facebook"></i></li>
+            <li><a href="https://www.linkedin.com/in/guillaume-gaudin/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/guillaumewillmiles/"><i class="fa-brands fa-instagram"></i></a></li>
           </ul>
         </div>
       </div>
