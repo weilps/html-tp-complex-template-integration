@@ -29,6 +29,7 @@ body {
   background: var(--color-bg-light1);
   min-height: 100vh;
   color: var(--color-font2);
+  margin: 0;
 }
 
 nav {
@@ -87,6 +88,7 @@ nav li:hover::before {
   border-radius: 15px;
   padding: 5px 10px;
   margin: 5px;
+  transition: 0, 4s;
 }
 
 #language::before {
@@ -96,9 +98,20 @@ nav li:hover::before {
 }
 
 #language:hover {
-  cursor: pointer;
   scale: 1.1;
+}
+
+#fr,
+#en {
+  transition: 0.4s;
+  color: var(--color-font2);
+  text-decoration: none;
+}
+
+#fr:hover,
+#en:hover {
   color: var(--color-font3);
+  cursor: pointer;
 }
 
 header {
@@ -456,6 +469,7 @@ section.sponsors {
   /* margin: 25px auto 0; */
   /* padding: 25px auto 0; */
   min-height: 150px;
+  margin: 0;
 }
 
 .sponsors h3 {
